@@ -38,3 +38,8 @@
 # Contact
 
     For any questions or comments please contact Sophie Rankin at sophie.g.rankin@gmail.com
+
+# Sources
+
+    refrenced Joelle DesChatelets youtube video to create index.js file.
+    
