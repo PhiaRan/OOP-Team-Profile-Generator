@@ -1,31 +1,31 @@
 
-const manager = require('../lib/employee')
-const manager = new manager('Sophie', '1234', 'sophie.g.rankin@gmail.com', '12')
+const Manager = require('../lib/manager')
+const manager = new Manager('name', 'id', 'email', 'office number')
 
 
-test('Test to see if we can get values for manager', () => {
-    expect(manager.name).tobe('Sophie')
+test('Test to see if we can get values for employee', () => {
+    expect(manager.name).tobe('name')
     expect(manager.id).tobe('123')
-    expect(manager.email).tobe('sophie.g.rankin@gmail.com')
-    expect(manager.officeNumber).tobe('12')
+    expect(manager.email).tobe('email')
+    expect(manager.officeNumber).tobe('77')
 })
 
-test('test to see if we can get name',() => {
-    expect(manager.getName()).tobe('Sophie')
+test('test to see if we can get name getName()',() => {
+    expect(manager.getName()).tobe('name')
 } )
 
-test('test id we can get id', () => {
-    expect(manager.getId()).tobe('1234')
+test('test id we can get id getID()', () => {
+    expect(manager.getId()).tobe('id')
 })
 
-test('test to see if we can get email', () => {
-    expect(manager.getEmail()).tobe('sophie.g.rankin@gmail.com')
+test('test to see if we can get email getEmail()', () => {
+    expect(manager.getEmail()).tobe('email')
 })
 
-test('test to see if we can get role', () => {
+test('test to see if we can get role getRole()', () => {
     expect(manager.getRole()).tobe('manager')
 })
 
-test('test to see if we can get office number', () => {
-    expect(manager.getofficeNumber()).tobe('12')
-})
+test('test to see if we can get office number getOfficenumber()',() => {
+    expect(manager.getofficeNumber()).tobe('77')
+});

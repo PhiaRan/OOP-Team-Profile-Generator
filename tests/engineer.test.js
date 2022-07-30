@@ -1,32 +1,31 @@
 
-const engineer = require('../lib/employee')
-const engineer = new engineer('Sophie', '1234', 'sophie.g.rankin@gmail.com', '12')
+const Engineer = require('../lib/engineer')
+const engineer = new Engineer('name', 'id', 'email', 'github')
 
 
-test('Test to see if we can get values for engineer', () => {
-    expect(engineer.name).tobe('Sophie')
-    expect(engineer.id).tobe('123')
-    expect(engineer.email).tobe('sophie.g.rankin@gmail.com')
-    expect(engineer.officeNumber).tobe('12')
-    expect(engineer.github).tobe('github.com/PhiaRan')
+test('Test to see if we can get values for employee', () => {
+    expect(engineer.name).tobe('name')
+    expect(engineer.id).tobe('id')
+    expect(engineer.email).tobe('email')
+    expect(engineer.githubUsername).tobe('github')
 })
 
-test('test to see if we can get name',() => {
-    expect(engineer.getName()).tobe('Sophie')
+test('test to see if we can get name getName()',() => {
+    expect(engineer.getName()).tobe('name')
 } )
 
-test('test id we can get id', () => {
-    expect(engineer.getId()).tobe('1234')
+test('test id we can get id getId()', () => {
+    expect(engineer.getId()).tobe('id')
 })
 
-test('test to see if we can get email', () => {
-    expect(engineer.getEmail()).tobe('sophie.g.rankin@gmail.com')
+test('test to see if we can get email getEmail()', () => {
+    expect(enginner.getEmail()).tobe('email')
 })
 
-test('test to see if we can get role', () => {
+test('test to see if we can get role get getRole()', () => {
     expect(engineer.getRole()).tobe('engineer')
 })
 
-test('test to see if we can get school', () => {
-    expect(engineer.get(github)).tobe('github.com/PhiaRan')
-})
+test('test to see if we can get github username getGithub()',() => {
+    expect(engineer.getGithub()).tobe('github')
+});

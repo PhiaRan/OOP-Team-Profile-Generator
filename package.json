@@ -1,14 +1,14 @@
 {
   "name": "oop-team-profile-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a app where you can genertate a team profile using node and creating a HTML page to display your profile.",
   "main": "index.js",
   "directories": {
     "lib": "lib",
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
